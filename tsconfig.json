@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*", "public/js/owl.carousel.min.js"],
+  "exclude": ["dist"], 
+   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["public/styles/*"],
+      "@js/*": ["public/js/*"]
+    }
+  }
+}

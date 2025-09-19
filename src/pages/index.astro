@@ -1,0 +1,68 @@
+---
+import AboutAppSection from "src/components/sections/AboutAppSection.astro";
+import BannerSection from "src/components/sections/BannerSection.astro";
+import BeautifulInterfaceSection from "src/components/sections/BeautifulInterfaceSection.astro";
+import DownloadSection from "src/components/sections/DownloadSection.astro";
+import FaqSection from "src/components/sections/FaqSection.astro";
+import FeatureSection from "src/components/sections/FeatureSection.astro";
+import FooterSection from "src/components/sections/FooterSection.astro";
+import HowItWorksSection from "src/components/sections/HowItWorksSection.astro";
+import ModerneUiSection from "src/components/sections/ModerneUiSection.astro";
+import NewsLetterSection from "src/components/sections/NewsLetterSection.astro";
+import PricingSection from "src/components/sections/PricingSection.astro";
+import StorySection from "src/components/sections/StorySection.astro";
+import TestimonialSection from "src/components/sections/TestimonialSection.astro";
+import TrustedSection from "src/components/sections/TrustedSection.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+
+<BaseLayout>
+    <!-- Page-wrapper-Start -->
+  <div class="page_wrapper">
+
+    <!-- Preloader -->
+    <div id="preloader" style="display: none;">
+      <div id="loader"></div>
+    </div>
+    <!-- Preloader-End -->
+
+    <BannerSection />
+    <TrustedSection />
+    <FeatureSection />
+   <AboutAppSection />
+   <ModerneUiSection />
+   <HowItWorksSection />
+   <TestimonialSection />
+   <PricingSection />
+   <FaqSection />
+   <BeautifulInterfaceSection />
+   <DownloadSection />
+   <StorySection />
+   <NewsLetterSection />
+   <FooterSection />
+
+
+    <!-- VIDEO MODAL -->
+  <div class="modal fade youtube-video" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button id="close-video" type="button" class="button btn btn-default text-right" data-dismiss="modal">
+            <i class="icofont-close-line-circled"></i>
+          </button>
+            <div class="modal-body">
+                <div id="video-container" class="video-container">
+                    <iframe id="youtubevideo" src="" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                </div>        
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div> 
+    </div>
+  </div>
+
+  <div class="purple_backdrop" style="opacity: 0;"></div>
+    <!-- Page-wrapper-End -->
+</div>
+
+</BaseLayout>
